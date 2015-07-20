@@ -40,8 +40,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\GestorStatus.cs" />
     <Compile Include="ProductService\ProductService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Gestor.Domain\Gestor.Domain.csproj">
+      <Project>{DC3A3F04-43E3-4EED-A4B0-13C01B2FF4ED}</Project>
+      <Name>Gestor.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gestor.Infrastructure\Gestor.Infrastructure.csproj">
+      <Project>{EB809751-74A5-4372-87F5-7052E2CB4483}</Project>
+      <Name>Gestor.Infrastructure</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
