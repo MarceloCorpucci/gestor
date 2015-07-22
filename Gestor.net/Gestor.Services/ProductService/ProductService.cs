@@ -8,11 +8,17 @@ using Gestor.Domain;
 
 namespace Gestor.Services {
     public class ProductService {
+        private ProductRepository repository;
 
         public ProductService(ProductRepository repository) {
+            this.repository = repository;
         }
 
-        public GestorStatus SaveProduct(List<Product> products) {
+        public GestorStatus Save(List<Product> products) {
+            foreach (var product in products) {
+              //repository.Save(product);
+            }
+
             return null;
         }
     }

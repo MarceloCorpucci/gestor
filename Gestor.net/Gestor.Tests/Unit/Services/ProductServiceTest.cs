@@ -30,7 +30,7 @@ namespace Gestor.Tests {
         public void TestSaveProduct() {
             var stubProductRepo = MockRepository.GenerateStub<ProductRepository>();
             var service = new ProductService(stubProductRepo);
-            var result = service.SaveProduct(dummyProducts);
+            var result = service.Save(dummyProducts);
 
             Assert.False(result.HasErrors);
         }

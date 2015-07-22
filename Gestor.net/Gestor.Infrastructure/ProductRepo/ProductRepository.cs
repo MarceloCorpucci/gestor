@@ -5,5 +5,6 @@ using System.Text;
 
 namespace Gestor.Infrastructure {
     public class ProductRepository {
+
     }
 }
